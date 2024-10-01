@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="FCC Web Dev Project1.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FCC Survey Form Project</title>
+    </head>
+    <body>
+        <h1 id="title">FCC Survey Form Project</h1>
+        <p id="description">Thank you for taking the time to complete my
+            survey</p>
+        <form id="survey-form" method="post" action="mailto:muhammadzubairbmirza@gmail.com">
+            <fieldset>
+                <label id="name-label" for="name">What is your name?</label>
+                <input id="name" type="text" name="name"
+                    placeholder="John Smith" required>
+                <label id="email-label" for="email">What is your email?</label>
+                <input id="email" type="email" name="email"
+                    placeholder="johnsmith@gmail.com" required>
+                <label id="number-label" for="number">What is your age?</label>
+                <input id="number" type="number" name="age" min="10" max="100"
+                    placeholder="18">
+                <label id="dropdown-label" for="dropdown">what is your favourite
+                    programming language?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="Javascript">Javascript</option>
+                    <option value="C#">C#</option>
+                    <option value="Java">Java</option>
+                    <option value="C++">C++</option>
+                    <option value="Python">Python</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <p class="legend">What type of developer would you like to
+                    be?</p>
+
+                <label for="frontend"><input class="inline" id="frontend"
+                        type="radio" name="dev-type" value="frontend"
+                        checked>Frontend</label>
+
+                <label for="backend"><input class="inline" id="backend"
+                        type="radio" name="dev-type"
+                        value="backend">Backend</label>
+
+                <label for="full-stack"> <input class="inline" id="full-stack"
+                        type="radio" name="dev-type" value="full-stack">Full
+                    Stack</label>
+
+                <p class="legend">How do you plan on reaching your goals in
+                    programming? <small>(check all that apply)</small></p>
+
+                <label for="project"><input class="inline" id="project"
+                        type="checkbox" name="check1" value="project">I plan to
+                    improve my projects</label>
+
+                <label for="resume"><input class="inline" id="resume"
+                        type="checkbox" name="check2" value="resume">I plan to
+                    improve my resume</label>
+
+                <label for="portfolio"><input class="inline" id="portfolio"
+                        type="checkbox" name="check3" value="portfolio">I plan
+                    to improve my portfolio</label>
+
+                <label for="experience"><input class="inline" id="experience"
+                        type="checkbox" name="check4" value="experience">I plan
+                    to get more experience</label>
+
+                <p class="textarea" for="comments">Do you have any comments?</p>
+                <textarea id="comments" name="comments" rows="4" cols="60"
+                    placeholder="please write your comments here"></textarea>
+
+                <input class="button" id="submit" type="submit" value="Submit">
+            </fieldset>
+
+        </form>
+    </body>
+</html>
